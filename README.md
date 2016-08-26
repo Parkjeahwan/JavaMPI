@@ -1,2 +1,2 @@
-# HadoopOperation
-Map-reduce code
+# JavaMPI
+example code
