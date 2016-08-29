@@ -1,6 +1,5 @@
 package com.mpi.nfair;
 
-import com.mpi.fair.ABPairSy;
 import mpi.MPI;
 import mpi.MPIException;
 
@@ -15,7 +14,6 @@ import java.util.List;
  */
 public class MPINPairDataBucket {
     private static String filepath1 = "/home/mpiuser/corpus_1000_article.txt";
-    private static String filepath2 = "/home/mpiuser/MPI_ncom/newfasdataoutput.txt";
     //Number of bucket
     private static int tokensize = 679;
 
@@ -23,7 +21,7 @@ public class MPINPairDataBucket {
         MPI.Init(args);
         int rank = MPI.COMM_WORLD.getRank(), size = MPI.COMM_WORLD.getSize();
 
-        List<String> S = new ArrayList<String>();
+        List<String> S = new ArrayList<>();
 
         String str;
         if (rank != 0) {
